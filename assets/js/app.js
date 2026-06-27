@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",()=>console.log("Limarsat Website Loaded"));
+console.log("Limarsat website loaded");
