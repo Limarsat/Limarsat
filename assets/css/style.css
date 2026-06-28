@@ -443,6 +443,11 @@ width:100%;
 height:220px;
 object-fit:cover;
 display:block;
+transition:.4s;
+}
+.gallery-card:hover img{
+transform:scale(1.08);
+
 }
 
 .gallery-card h3{
