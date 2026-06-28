@@ -185,11 +185,11 @@ gap:35px;
 background:#fff;
 padding:40px;
 border-radius:22px;
+overflow:hidden;
 box-shadow:0 15px 40px rgba(0,0,0,.10);
 text-align:center;
 transition:.35s;
 border:1px solid #f1f1f1;
-overflow:hidden;
 }
 
 .card:hover{
@@ -578,6 +578,56 @@ margin-left:0;
 nav a{
 font-size:15px;
 padding:8px;
+}
+
+@media(max-width:768px){
+
+.hero{
+height:100vh;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.button{
+padding:16px 30px;
+font-size:18px;
+}
+
+.services h2,
+.gallery h2,
+.about h2,
+.contact h2{
+font-size:32px;
+}
+
+.logo img{
+height:55px;
+}
+
+.container{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+}
+
+nav li{
+margin-left:0;
+}
+
+nav a{
+font-size:15px;
+padding:6px 10px;
 }
 
 }
