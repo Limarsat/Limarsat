@@ -68,15 +68,12 @@ margin-left:35px;
 }
 
 nav a{
-
+color:#fff;
 text-decoration:none;
-
-color:white;
-
+font-size:18px;
 font-weight:600;
-
+padding:10px 15px;
 transition:.3s;
-
 }
 
 nav a:hover{
@@ -475,7 +472,7 @@ color:#666;
 line-height:1.6;
 }
 .logo img{
-height:65px;
+height:75px;
 width:auto;
 display:block;
 }
