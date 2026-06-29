@@ -346,79 +346,68 @@ CONTACT
 
 .contact-grid{
     display:grid;
-    grid-template-columns:1fr 420px;
-    gap:50px;
-    align-items:start;
+    grid-template-columns:1fr 1fr 1.3fr;
+    gap:30px;
+    align-items:stretch;
 }
-.contact-card{
+
+.contact-left{
+    grid-column:1 / 4;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.contact-right{
+    display:contents;
+}
+
+.contact-card,
+.map-card{
     background:#fff;
-    padding:35px;
     border-radius:20px;
     box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
 
-.contact-card h3{
-    color:#1565ff;
-    margin:20px 0 10px;
-    font-size:22px;
-}
-
-.contact-card p{
-    color:#555;
-    line-height:1.8;
-    margin-bottom:15px;
-}
-
-.contact-card form{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.contact-card input,
-.contact-card textarea{
-    width:100%;
-    padding:15px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    font-size:16px;
-    font-family:inherit;
-    transition:.3s;
-}
-
-.contact-card input:focus,
-.contact-card textarea:focus{
-    border-color:#1565ff;
-    outline:none;
-    box-shadow:0 0 0 4px rgba(21,101,255,.12);
-}
-
-.contact-card textarea{
-    min-height:170px;
-    resize:vertical;
-}
-
-.contact-card button{
-    width:100%;
+.contact-card{
+    padding:35px;
 }
 
 .map-card{
-    grid-column:2;
-    margin-top:25px;
     overflow:hidden;
-    border-radius:20px;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
 
 .map-card iframe{
     width:100%;
-    height:450px;
+    height:100%;
+    min-height:520px;
     border:0;
 }
 /* ===========================
 RESPONSIVE
 =========================== */
+@media(max-width:900px){
 
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-left{
+    grid-column:auto;
+}
+
+.contact-right{
+    display:block;
+}
+
+.contact-card,
+.map-card{
+    margin-bottom:25px;
+}
+
+.map-card iframe{
+    height:350px;
+}
+}
 @media (max-width:900px){
 
     .container{
