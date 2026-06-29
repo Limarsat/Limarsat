@@ -571,6 +571,7 @@ img{
 
 .gallery-card img{
     transition:transform .45s ease;
+}
 .contact-card input,
 .contact-card textarea{
     width:100%;
