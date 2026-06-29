@@ -604,3 +604,16 @@ footer{
 .call-btn{
     margin-top:auto;
 }
+.hero{
+    margin:0;
+    padding:20px;
+}
+
+.services{
+    margin:0;
+    padding-top:100px;
+}
+
+.services h2{
+    margin-top:0;
+}
