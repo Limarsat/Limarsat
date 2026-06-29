@@ -622,3 +622,24 @@ transform:scale(1.08);
     transform:scale(1.1);
     transition:.3s;
 }
+#kontakt{
+    padding:60px 20px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+#kontakt h2{
+    font-size:32px;
+    margin-bottom:25px;
+    color:#0d6efd;
+}
+
+#kontakt p{
+    font-size:18px;
+    margin:10px 0;
+    color:#333;
+}
+
+#kontakt strong{
+    font-size:22px;
+}
