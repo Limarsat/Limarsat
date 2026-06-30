@@ -1,36 +1,63 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Fade In Animation
-    const elements = document.querySelectorAll(
+    /* ==========================
+       FADE ANIMATION
+    ========================== */
+
+    const animatedElements = document.querySelectorAll(
         ".card, .gallery-card, .about-box div, .stat, .contact-card"
     );
 
-    const observer = new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-            if(entry.isIntersecting){
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
                 entry.target.classList.add("show");
+
+                observer.unobserve(entry.target);
+
             }
+
         });
+
     }, {
         threshold:0.2
     });
 
-    elements.forEach(el=>{
-        el.classList.add("fade");
-        observer.observe(el);
+    animatedElements.forEach(element => {
+
+        element.classList.add("fade");
+
+        observer.observe(element);
+
     });
 
-    // Header Scroll
+    /* ==========================
+       HEADER SCROLL
+    ========================== */
+
     const header = document.querySelector("header");
 
-    window.addEventListener("scroll", ()=>{
+    function updateHeader(){
+
         if(window.scrollY > 60){
-            header.style.background = "rgba(13,20,35,.95)";
-            header.style.boxShadow = "0 8px 30px rgba(0,0,0,.25)";
+
+            header.classList.add("scrolled");
+
         }else{
-            header.style.background = "rgba(20,20,20,.85)";
-            header.style.boxShadow = "0 4px 20px rgba(0,0,0,.15)";
+
+            header.classList.remove("scrolled");
+
         }
+
+    }
+
+    updateHeader();
+
+    window.addEventListener("scroll", updateHeader, {
+        passive:true
     });
 
 });
