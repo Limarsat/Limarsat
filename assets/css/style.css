@@ -132,12 +132,18 @@ nav a{
 
     font-weight:600;
 
-    transition:color .3s ease;
-}
+    padding:8px 0;
 
-nav a:hover{
+    transition:color .3s ease, opacity .3s ease;
+
+}
+nav a:hover,
+nav a:focus{
 
     color:#ffd54f;
+
+    opacity:.9;
+
 }
 
 /* ===========================
