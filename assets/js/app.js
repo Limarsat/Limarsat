@@ -61,8 +61,9 @@ window.addEventListener("scroll",()=>{
                 count+=speed;
 
                 if(count<target){
+const suffix = counter.innerText.replace(/[0-9]/g,"");
 
-                    counter.innerText=Math.floor(count)+"+";
+counter.innerText = Math.floor(count) + suffix;
 
                     requestAnimationFrame(update);
 
