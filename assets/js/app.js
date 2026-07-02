@@ -121,6 +121,6 @@ topBtn.addEventListener("click", () => {
 const footer = document.querySelector("footer p");
 
 if (footer) {
-    footer.innerHTML =
-        "© " + new Date().getFullYear() + " Limarsat | Hannover | Germany";
+    footer.textContent =
+        `© ${new Date().getFullYear()} Limarsat | Hannover | Germany`;
 }
