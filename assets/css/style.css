@@ -77,6 +77,11 @@ header{
         box-shadow .35s;
 }
 
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+   }
 header.scrolled{
 
     background:rgba(13,71,161,.96);
