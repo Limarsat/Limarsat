@@ -576,14 +576,6 @@ SERVICE CARD
     text-align:center;
 }
 
-/* تم حذف display:contents نهائياً */
-
-.contact-right{
-    display:grid;
-    grid-template-columns:360px 360px 1fr;
-    gap:30px;
-}
-
 .contact-card{
     background:#fff;
     border-radius:20px;
