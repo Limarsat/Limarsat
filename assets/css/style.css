@@ -389,14 +389,16 @@ BUTTON
     align-items:stretch;
 }
 
-.contact-card,
-.contact-form,
-.map-card{
-    background:#fff;
-    border-radius:20px;
-    border:1px solid #ececec;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-    overflow:hidden;
+.contact-card{
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+   }
+.contact-card .button,
+.contact-form button{
+    margin-top:auto;
+
 }
 
 .contact-card{
