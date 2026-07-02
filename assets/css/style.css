@@ -377,132 +377,98 @@ BUTTON
     color:#666;
     font-size:20px;
     margin-bottom:50px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
 }
-
-/* الشبكة */
 
 .contact-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,minmax(0,1fr));
     gap:30px;
     align-items:stretch;
 }
 
-.contact-card{
+.contact-card,
+.contact-form,
+.map-card{
     background:#fff;
     border-radius:20px;
-    padding:30px;
-    min-height:580px;
-    display:flex;
-    flex-direction:column;
     border:1px solid #ececec;
     box-shadow:0 12px 35px rgba(0,0,0,.08);
-}
-.contact-form{
-    background:#fff;
-    border-radius:20px;
-    padding:30px;
-    border:1px solid #ececec;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    overflow:hidden;
 }
 
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    display:block;
-    padding:16px 18px;
-    margin-bottom:18px;
-    border:2px solid #ddd;
-    border-radius:12px;
-    font-size:17px;
-    font-family:'Poppins',sans-serif;
-    box-sizing:border-box;
+.contact-card{
+    padding:30px;
+    display:flex;
+    flex-direction:column;
 }
-.contact-form textarea{
-    min-height:180px;
-    resize:vertical;
+
+.contact-card h3{
+    color:#1565ff;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.contact-card p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+.contact-card a{
+    color:#1565ff;
+    text-decoration:none;
+}
+
+.contact-card .button{
+    margin-top:auto;
+    width:100%;
+    text-align:center;
+}
+
+.contact-form{
+    padding:30px;
 }
 
 .contact-form form{
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:18px;
 }
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px 18px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    font-family:'Poppins',sans-serif;
+    transition:.3s;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus{
-    border-color:#1565ff;
     outline:none;
+    border-color:#1565ff;
+    box-shadow:0 0 0 4px rgba(21,101,255,.12);
 }
 
 .contact-form textarea{
+    min-height:190px;
     resize:vertical;
-    min-height:180px;
 }
 
-.contact-form button{
+.contact-form .button{
     width:100%;
-}
-.contact-card input,
-.contact-card textarea{
-
-    width:100%;
-
-    padding:18px 20px;
-
-    margin-bottom:18px;
-
-    border:2px solid #ddd;
-
-    border-radius:12px;
-
-    outline:none;
-
-    font-size:20px;
-
-    font-family:'Poppins',sans-serif;
-
-    transition:border-color .3s;
-}
-
-.contact-card input:focus,
-.contact-card textarea:focus{
-
-    border-color:#1565ff;
-}
-
-.contact-card textarea{
-
-    resize:vertical;
-
-    min-height:180px;
-}
-
-.contact-card input::placeholder,
-.contact-card textarea::placeholder{
-
-    color:#777;
-}
-
-.call-btn{
-
-    margin-top:auto;
-}
-
-.map-card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    border:1px solid #ececec;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-    min-height:580px;
 }
 
 .map-card iframe{
-
     width:100%;
-
-    height:580px;
-
+    height:100%;
+    min-height:580px;
     border:0;
 }
 /* =====================================================
@@ -520,21 +486,24 @@ footer{
 
 footer p{
     font-size:17px;
-    opacity:.9;
+    opacity:.95;
+    margin-bottom:10px;
 }
+
 footer a,
 footer a:visited{
-    color:#ffffff; !important;
+    color:#ffffff !important;
     text-decoration:none;
     font-weight:600;
-    transition:color .3s ease;
+    transition:all .3s ease;
 }
 
 footer a:hover,
 footer a:focus{
-    color:#ffffff; !important;
+    color:#ffd54f !important;
     text-decoration:underline;
 }
+
 /* =====================================================
    WHATSAPP
 ===================================================== */
@@ -547,23 +516,17 @@ footer a:focus{
     height:65px;
     border-radius:50%;
     background:#25D366;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     box-shadow:0 10px 25px rgba(0,0,0,.30);
-
     z-index:9999;
-
-    transition:
-        transform .3s,
-        box-shadow .3s;
+    transition:all .3s ease;
 }
 
 .whatsapp:hover{
-    transform:scale(1.1);
-    box-shadow:0 15px 30px rgba(0,0,0,.35);
+    transform:scale(1.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
 }
 
 .whatsapp img{
@@ -577,10 +540,8 @@ footer a:focus{
 
 .fade{
     opacity:0;
-    transform:translateY(40px);
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
+    transform:translateY(35px);
+    transition:opacity .8s ease, transform .8s ease;
 }
 
 .fade.show{
@@ -606,17 +567,8 @@ footer a:focus{
     grid-template-columns:1fr;
 }
 
-.contact-left{
-    grid-column:auto;
-}
-
-.contact-card,
-.map-card{
-    min-height:auto;
-}
-
 .map-card iframe{
-    height:420px;
+    min-height:420px;
 }
 
 nav ul{
@@ -638,7 +590,6 @@ header{
 .hero{
     margin-top:65px;
     min-height:calc(100vh - 65px);
-    padding:30px 20px;
 }
 
 .hero h1{
@@ -650,21 +601,22 @@ header{
 }
 
 .button{
-    padding:15px 30px;
-    font-size:17px;
+    width:100%;
+    text-align:center;
+    padding:16px 28px;
 }
 
 .services,
-.about,
 .gallery,
+.about,
 .contact,
 .stats{
     padding:70px 5%;
 }
 
 .services h2,
-.about h2,
 .gallery h2,
+.about h2,
 .contact h2{
     font-size:34px;
 }
@@ -675,17 +627,9 @@ header{
     grid-template-columns:1fr;
 }
 
-.card{
-    padding:30px 25px;
-}
-
-.contact-card{
+.contact-card,
+.contact-form{
     padding:25px;
-}
-
-.contact-card input,
-.contact-card textarea{
-    font-size:18px;
 }
 
 .whatsapp{
@@ -700,12 +644,6 @@ header{
     height:32px;
 }
 
-footer{
-    margin-top:50px;
-    padding:30px 20px;
-}
-
-}
 
 /* =====================================================
    SMALL PHONES
@@ -721,11 +659,6 @@ footer{
     font-size:17px;
 }
 
-.button{
-    width:100%;
-    text-align:center;
-}
-
 .logo img{
     height:42px;
 }
@@ -735,10 +668,6 @@ nav a{
 }
 
 .gallery-card img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    display:block;
-    background:red;
+    height:210px;
 }
-   }
+}
