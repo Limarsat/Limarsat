@@ -570,7 +570,7 @@ SERVICE CARD
 }
 
 .contact-left{
-    grid-column:1 / -1;
+    
     text-align:center;
 }
 
@@ -683,7 +683,6 @@ SERVICE CARD
 }
 
 .map-card{
-    grid-column: 1 / -1;
     background:#fff;
     border-radius:20px;
     overflow:hidden;
