@@ -681,7 +681,7 @@ footer p{
 }
 footer a,
 footer a:visited{
-    color:#ffffff;
+    color:#ffffff; !important;
     text-decoration:none;
     font-weight:600;
     transition:color .3s ease;
@@ -689,7 +689,7 @@ footer a:visited{
 
 footer a:hover,
 footer a:focus{
-    color:#ffffff;
+    color:#ffffff; !important;
     text-decoration:underline;
 }
 /* =====================================================
