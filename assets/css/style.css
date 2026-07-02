@@ -564,9 +564,9 @@ SERVICE CARD
 
 .contact-grid{
     display:grid;
-    grid-template-columns:360px 360px 1fr;
+    grid-template-columns:1fr 1fr;
     gap:30px;
-    align-items:stretch;
+    align-items:start;
 }
 
 .contact-left{
