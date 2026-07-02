@@ -603,14 +603,25 @@ SERVICE CARD
 .contact-form input,
 .contact-form textarea{
     width:100%;
-    padding:18px;
+    display:block;
+    padding:16px 18px;
     margin-bottom:18px;
     border:2px solid #ddd;
     border-radius:12px;
     font-size:17px;
     font-family:'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+.contact-form textarea{
+    min-height:180px;
+    resize:vertical;
 }
 
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
 .contact-form input:focus,
 .contact-form textarea:focus{
     border-color:#1565ff;
