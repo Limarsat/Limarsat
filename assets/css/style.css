@@ -640,17 +640,12 @@ SERVICE CARD
 }
 
 .map-card{
-
+    grid-column: 1 / -1;
     background:#fff;
-
     border-radius:20px;
-
     overflow:hidden;
-
     border:1px solid #ececec;
-
     box-shadow:0 12px 35px rgba(0,0,0,.08);
-
     min-height:580px;
 }
 
