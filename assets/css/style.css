@@ -425,11 +425,23 @@ BUTTON
 .contact-card .button{
     margin-top:auto;
     width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:60px;
     text-align:center;
+    color:#fff !important;
+    line-height:1;
 }
 
-.contact-form{
-    padding:30px;
+.contact-form .button{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:60px;
+    color:#fff !important;
+    line-height:1;
 }
 
 .contact-form form{
