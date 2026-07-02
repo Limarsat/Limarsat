@@ -592,7 +592,39 @@ SERVICE CARD
     border:1px solid #ececec;
     box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
+.contact-form{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    border:1px solid #ececec;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
 
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:18px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:17px;
+    font-family:'Poppins',sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#1565ff;
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+.contact-form button{
+    width:100%;
+}
 .contact-card input,
 .contact-card textarea{
 
