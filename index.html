@@ -338,7 +338,7 @@ Jetzt anrufen
 
 <h3>✉ Kontaktformular</h3>
 
-<form action="send.php" method="POST">
+<form action="https://formsubmit.co/info@limarsat.de" method="POST">
 
 <input type="text" name="name" placeholder="Ihr Name" required>
 
@@ -347,6 +347,10 @@ Jetzt anrufen
 <input type="tel" name="phone" placeholder="Telefon">
 
 <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_next" value="https://limarsat.de">
 
 <button type="submit" class="button">
 Nachricht senden
