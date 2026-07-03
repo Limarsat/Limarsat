@@ -27,6 +27,11 @@ TABLETS (MAX-WIDTH: 1024px)
         font-size:19px;
     }
 
+    .button{
+        padding:14px 28px;
+        font-size:15px;
+    }
+
     .contact-grid{
         grid-template-columns:1fr 1fr;
     }
@@ -82,8 +87,8 @@ TABLETS (MAX-WIDTH: 900px)
     }
 
     .button{
-        padding:15px 35px;
-        font-size:16px;
+        padding:14px 28px;
+        font-size:15px;
     }
 
     .services h2,
