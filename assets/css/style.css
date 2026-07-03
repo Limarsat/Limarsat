@@ -1,7 +1,7 @@
 
 /* =====================================================
    LIMARSAT 2026
-   Professional CSS v3.0
+   Professional CSS v3.1
 ===================================================== */
 
 /* ===========================
@@ -74,6 +74,7 @@ header .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    width:100%;
 }
 
 header.scrolled{
@@ -116,6 +117,7 @@ nav a{
     font-size:17px;
     font-weight:600;
     transition:.3s;
+    display:inline-block;
 }
 
 nav a:hover{
@@ -291,6 +293,11 @@ BUTTON
     box-shadow:0 20px 45px rgba(21,101,255,.18);
 }
 
+.gallery-card a{
+    text-decoration:none;
+    color:inherit;
+}
+
 .gallery-card img{
     width:100%;
     height:230px;
@@ -306,12 +313,14 @@ BUTTON
     padding:20px 20px 10px;
     text-align:center;
     color:#1565ff;
+    font-size:22px;
 }
 
 .gallery-card p{
     padding:0 20px 25px;
     text-align:center;
     color:#666;
+    font-size:15px;
 }
 
 /* =====================================================
@@ -620,133 +629,8 @@ footer a:focus{
 }
 
 /* =====================================================
-   TABLET
+   SERVICE LIST
 ===================================================== */
-
-@media (max-width:992px){
-
-.hero h1{
-    font-size:42px;
-}
-
-.hero p{
-    font-size:20px;
-}
-
-.contact-grid{
-    grid-template-columns:1fr;
-}
-
-.map-card iframe{
-    min-height:420px;
-}
-
-nav ul{
-    gap:18px;
-}
-
-}
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width:768px){
-
-header{
-    height:65px;
-}
-
-.hero{
-    margin-top:65px;
-    min-height:calc(100vh - 65px);
-}
-
-.hero h1{
-    font-size:34px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.button{
-    width:100%;
-    text-align:center;
-    padding:16px 28px;
-}
-
-.services,
-.gallery,
-.about,
-.contact,
-.stats,
-.testimonials,
-.faq{
-    padding:70px 5%;
-}
-
-.services h2,
-.gallery h2,
-.about h2,
-.contact h2,
-.testimonials h2,
-.faq h2{
-    font-size:34px;
-}
-
-.grid,
-.gallery-grid,
-.about-box{
-    grid-template-columns:1fr;
-}
-
-.contact-card,
-.contact-form{
-    padding:25px;
-}
-
-.whatsapp{
-    width:58px;
-    height:58px;
-    right:18px;
-    bottom:18px;
-}
-
-.whatsapp img{
-    width:32px;
-    height:32px;
-}
-
-}
-
-/* =====================================================
-   SMALL PHONES
-===================================================== */
-
-@media (max-width:480px){
-
-.hero h1{
-    font-size:28px;
-}
-
-.hero p{
-    font-size:17px;
-}
-
-.logo img{
-    height:42px;
-}
-
-nav a{
-    font-size:15px;
-}
-
-.gallery-card img{
-    height:210px;
-}
-
-}
 
 .service-list{
     display:grid;
