@@ -117,16 +117,25 @@ nav ul{
 }
 
 nav a{
+    display:flex;
+    align-items:center;
+    gap:8px;
     color:#fff;
     text-decoration:none;
     font-size:17px;
     font-weight:600;
-    transition:.3s;
-    display:inline-block;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:all .3s ease;
 }
 
 nav a:hover{
-    color:#ffd54f;
+    background:rgba(255,255,255,.12);
+    color:#4da3ff;
+    transform:translateY(-2px);
+}
+nav a i{
+    font-size:18px;
 }
 
 /* ===========================
