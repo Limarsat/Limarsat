@@ -1,203 +1,174 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Kontakt | Limarsat</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<style>
+<title>Limarsat | Kontakt</title>
 
-.contact{
-padding:120px 10% 80px;
-max-width:900px;
-margin:auto;
-}
+<meta name="description"
+content="Kontaktieren Sie uns für Reparaturen - Telefon, E-Mail, Adresse und Kontaktformular.">
 
-.contact h2{
-text-align:center;
-font-size:40px;
-margin-bottom:40px;
-}
+<link rel="stylesheet"
+href="assets/css/style.css">
 
-form{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
+<link rel="stylesheet"
+href="assets/css/responsive.css">
 
-input,
-textarea{
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-width:100%;
-padding:16px;
-margin-bottom:20px;
-border:1px solid #ddd;
-border-radius:10px;
-font-size:16px;
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-}
-
-textarea{
-
-height:180px;
-resize:vertical;
-
-}
-
-button{
-
-background:#1565c0;
-color:white;
-padding:15px 35px;
-border:none;
-border-radius:40px;
-font-size:18px;
-cursor:pointer;
-
-}
-
-button:hover{
-
-background:#0d47a1;
-
-}
-
-.info{
-
-margin-top:50px;
-text-align:center;
-font-size:18px;
-line-height:2;
-
-}
-
-.whatsapp{
-
-display:inline-block;
-margin-top:25px;
-background:#25D366;
-color:white;
-padding:15px 30px;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-
-}
-
-.phone{
-
-display:inline-block;
-margin-top:20px;
-margin-left:10px;
-background:#1565c0;
-color:white;
-padding:15px 30px;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
 
 </head>
 
 <body>
-
+  
 <header>
+    <div class="container">
 
-<div class="logo">LIMARSAT</div>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Limarsat">
+        </div>
 
-<nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="services.html">Leistungen</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
 
-<a href="index.html">Home</a>
-
-<a href="services.html">Dienstleistungen</a>
-
-<a href="shipping.html">Versand</a>
-
-<a href="contact.html">Kontakt</a>
-
-</nav>
-
+    </div>
 </header>
 
+<section id="contact" class="contact">
 
-<section class="contact">
+<div class="container">
 
 <h2>Kontaktieren Sie uns</h2>
 
-<form>
+<p class="contact-subtitle">
+Schnelle Reparaturen für Smartphones, Laptops und Mainboards.
+</p>
 
-<input
-type="text"
-placeholder="Ihr Name">
+<div class="contact-grid">
 
-<input
-type="email"
-placeholder="E-Mail">
+<div class="contact-card">
 
-<input
-type="text"
-placeholder="Telefon">
+<h3>📍 Adresse</h3>
+<p>
+Engelbosteler Damm 75<br>
+30167 Hannover
+</p>
 
-<textarea
-placeholder="Beschreiben Sie Ihr Problem..."></textarea>
+<h3>☎ Telefon</h3>
+<p>
+<a href="tel:+4951134004861">
+0511 34004861
+</a>
+</p>
 
-<button>
+<h3>✉ E-Mail</h3>
+<p>
+<a href="mailto:info@limarsat.de">
+info@limarsat.de
+</a>
+</p>
 
-Anfrage senden
+<h3>🕒 Öffnungszeiten</h3>
 
+<p>
+Montag – Freitag<br>
+10:00 – 20:00 Uhr
+</p>
+
+<p>
+Samstag<br>
+10:00 – 18:00 Uhr
+</p>
+
+<a href="tel:+4951134004861" class="button call-btn">
+Jetzt anrufen
+</a>
+
+</div>
+
+<div class="contact-form">
+
+<h3>✉ Kontaktformular</h3>
+
+<form action="https://formsubmit.co/info@limarsat.de" method="POST">
+
+<input type="text" name="name" placeholder="Ihr Name" required>
+
+<input type="email" name="email" placeholder="Ihre E-Mail" required>
+
+<input type="tel" name="phone" placeholder="Telefon">
+
+<textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_next" value="https://limarsat.de">
+
+<button type="submit" class="button">
+Nachricht senden
 </button>
 
 </form>
 
+</div>
 
-<div class="info">
+<div class="map-card">
 
-<strong>Limarsat</strong>
+<iframe
+src="https://www.google.com/maps?q=Engelbosteler+Damm+75+Hannover&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
 
-<br><br>
+</div>
 
-Laptop • Smartphone • PC Reparatur
-
-<br><br>
-
-Deutschland
-
-<br><br>
-
-<a class="whatsapp"
-href="https://wa.me/49123456789">
-
-WhatsApp
-
-</a>
-
-<a class="phone"
-href="tel:+49123456789">
-
-Anrufen
-
-</a>
+</div>
 
 </div>
 
 </section>
 
-
 <footer>
 
+<p>© 2026 Limarsat | Hannover | Germany</p>
+
 <p>
-
-© 2026 Limarsat | Germany
-
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
 </p>
 
 </footer>
+
+<a href="https://wa.me/+491732402450"
+class="whatsapp"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="WhatsApp">
+
+<img src="assets/images/whatsapp-icon.svg" alt="WhatsApp">
+
+</a>
+
+<script src="assets/js/script.js"></script>
 
 </body>
 
