@@ -91,9 +91,9 @@ LOGO
 }
 
 .logo img{
-    height:50px;
+    height:60px;
     width:auto;
-    transition:.3s;
+    display:block;
 }
 
 .logo img:hover{
