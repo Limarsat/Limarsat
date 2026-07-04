@@ -61,3 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+// ===== Urlaub Popup =====
+
+const popup = document.getElementById("urlaubPopup");
+const closePopup = document.getElementById("closePopup");
+
+if (popup && closePopup) {
+    closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+}
