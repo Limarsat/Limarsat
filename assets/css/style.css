@@ -679,3 +679,61 @@ footer a:focus{
 .service-list li:hover{
     transform:translateY(-5px);
 }
+/* ==========================
+   Urlaub Popup
+========================== */
+
+.urlaub-popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    padding:20px;
+}
+
+.urlaub-box{
+    position:relative;
+    max-width:900px;
+    width:100%;
+    animation:popup .3s ease;
+}
+
+.urlaub-box img{
+    width:100%;
+    display:block;
+    border-radius:18px;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.popup-close{
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#1565ff;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.popup-close:hover{
+    background:#0d47a1;
+}
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
