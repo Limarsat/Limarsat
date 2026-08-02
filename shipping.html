@@ -1,4 +1,232 @@
-[17:01, 2.8.2026] Limarsat: background:#e3f2…
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Versandservice | Limarsat</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+/* تنسيق القائمة العلوية لتطابق الصفحة الرئيسية تماماً */
+header {
+    background-color: #222;
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .logo-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.shipping {
+    padding: 120px 10% 80px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.shipping h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.shipping p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.step {
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.step span {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.note {
+    margin-top: 50px;
+    background: #e3f2fd;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-text">Limarsat</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i> Startseite
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Leistungen
+                    </a>
+                </li>
+                <li>
+                    <a href="shipping.html">
+                        <i class="fa-solid fa-box"></i> Versand
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <i class="fa-regular fa-images"></i> Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fa-solid fa-circle-info"></i> Über uns
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fa-solid fa-phone"></i> Kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="shipping">
+
+<h2>Reparatur per Versand</h2>
+
+<p>
+Senden Sie uns Ihr Gerät sicher zu. Nach der Diagnose erhalten Sie ein Angebot. Erst nach Ihrer Zustimmung beginnen wir mit der Reparatur.
+</p>
+
+<div class="steps">
+
+<div class="step">
+<span>📦</span>
+<h3>1. Gerät verpacken</h3>
+<p>Verpacken Sie Ihr Gerät sicher und stoßfest.</p>
+</div>
+
+<div class="step">
+<span>🚚</span>
+<h3>2. Versand</h3>
+<p>Senden Sie das Paket mit DHL oder GLS an unsere Werkstatt.</p>
+</div>
+
+<div class="step">
+<span>🔍</span>
+<h3>3. Diagnose</h3>
+<p>Wir prüfen das Gerät und informieren Sie über die Kosten.</p>
+</div>
+
+<div class="step">
+<span>✅</span>
+<h3>4. Reparatur & Rückversand</h3>
+<p>Nach Ihrer Freigabe reparieren wir das Gerät und senden es zurück.</p>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Hinweis:</strong><br><br>
+Bitte legen Sie Ihren Namen, Ihre Telefonnummer, Ihre E-Mail-Adresse sowie eine kurze Fehlerbeschreibung dem Paket bei.
+</div>
+
+<div style="text-align: center; margin-top: 40px; background: #f9f9f9; padding: 30px; border-radius: 18px;">
+    <h3 style="margin-bottom: 15px;">Paket zu DHL bringen & frankieren</h3>
+    <p style="margin-bottom: 20px; color: #555;">
+        Sie können Ihr Paket bequem online bei DHL frankieren oder direkt in einer Postfiliale abgeben. Die Versandkosten trägt der Kunde.
+    </p>
+    <a href="https://www.dhl.de/de/privatkunden/pakete-versenden/online-frankieren.html" target="_blank" style="background: #d40511; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-bottom: 20px;">
+        📦 DHL Online Frankierung
+    </a>
+    <div style="font-size: 16px; color: #333; margin-top: 15px; border-top: 1px solid #ddd; padding-top: 15px;">
+        <strong>Unsere Adresse für den Versand:</strong><br>
+        Limarsat<br>
+        Engelbosteler Damm 75<br>
+        30167 Hannover, Germany
+    </div>
+</div>
+
+</section>
+
+<footer>
+<p>©️ 2026 Limarsat | Hannover | Germany</p>
+<p>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>[17:01, 2.8.2026] Limarsat: background:#e3f2…
 [17:03, 2.8.2026] Limarsat: <!DOCTYPE html>
 <html lang="de">
 <head>
