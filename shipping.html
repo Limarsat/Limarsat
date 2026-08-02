@@ -106,6 +106,25 @@ header nav ul li a:hover {
     display: block;
     margin-bottom: 15px;
 }
+
+/* تخصيص الطباعة لطباعة الفورم فقط */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printArea, #printArea * {
+        visibility: visible;
+    }
+    #printArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none !important;
+    }
+}
 </style>
 
 </head>
@@ -191,8 +210,8 @@ Senden Sie uns Ihr Gerät sicher zu. Nach der Diagnose erhalten Sie ein Angebot.
 
 </div>
 
-<!-- نموذج الإصلاح (Begleitschein) للطباعة -->
-<div style="margin-top: 50px; background: #fff; padding: 35px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08);">
+<!-- نموذج الإصلاح (Begleitschein) مع معرّف الطباعة -->
+<div id="printArea" style="margin-top: 50px; background: #fff; padding: 35px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08);">
     <h3 style="margin-bottom: 20px; text-align: center; color: #333;">📝 Begleitschein für die Reparatur</h3>
     <p style="text-align: center; color: #555; margin-bottom: 30px;">
         Bitte füllen Sie dieses Formular aus und legen Sie es ausgedruckt Ihrem Paket bei.
