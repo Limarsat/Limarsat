@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+[17:01, 2.8.2026] Limarsat: background:#e3f2…
+[17:03, 2.8.2026] Limarsat: <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -8,6 +9,43 @@
 <link rel="stylesheet" href="assets/css/style.css">
 
 <style>
+/* تنسيق الشريط العلوي والقائمة لكي تظهر أفقياً */
+header {
+    background-color: #222;
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
 .shipping{
 padding:120px 10% 80px;
 max-width:1100px;
@@ -116,7 +154,7 @@ Bitte legen Sie Ihren Namen, Ihre Telefonnummer, Ihre E-Mail-Adresse sowie eine 
 </section>
 
 <footer>
-<p>© 2026 Limarsat | Germany</p>
+<p>©️ 2026 Limarsat | Germany</p>
 </footer>
 
 </body>
