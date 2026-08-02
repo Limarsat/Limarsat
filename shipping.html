@@ -107,7 +107,7 @@ header nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* تخصيص الطباعة لطباعة الفورم فقط */
+/* تخصيص الطباعة لطباعة الفورم في صفحة واحدة فقط */
 @media print {
     body * {
         visibility: hidden;
@@ -121,8 +121,12 @@ header nav ul li a:hover {
         top: 0;
         width: 100%;
         margin: 0;
-        padding: 10px;
+        padding: 5px;
         box-shadow: none !important;
+    }
+    @page {
+        size: auto;
+        margin: 8mm;
     }
 }
 </style>
@@ -211,44 +215,44 @@ Senden Sie uns Ihr Gerät sicher zu. Nach der Diagnose erhalten Sie ein Angebot.
 </div>
 
 <!-- نموذج الإصلاح (Begleitschein) مع معرّف الطباعة والحقل الإضافي -->
-<div id="printArea" style="margin-top: 50px; background: #fff; padding: 35px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08);">
-    <h3 style="margin-bottom: 20px; text-align: center; color: #333;">📝 Begleitschein für die Reparatur</h3>
-    <p style="text-align: center; color: #555; margin-bottom: 30px;">
+<div id="printArea" style="margin-top: 50px; background: #fff; padding: 30px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08);">
+    <h3 style="margin-bottom: 15px; text-align: center; color: #333;">📝 Begleitschein für die Reparatur</h3>
+    <p style="text-align: center; color: #555; margin-bottom: 25px;">
         Bitte füllen Sie dieses Formular aus und legen Sie es ausgedruckt Ihrem Paket bei.
     </p>
 
-    <form style="display: flex; flex-direction: column; gap: 20px;">
+    <form style="display: flex; flex-direction: column; gap: 15px;">
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Name & Vorname:</label>
-            <input type="text" placeholder="Ihr Name" style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Name & Vorname:</label>
+            <input type="text" placeholder="Ihr Name" style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px;">
         </div>
 
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Telefonnummer & E-Mail:</label>
-            <input type="text" placeholder="Telefonnummer oder E-Mail" style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Telefonnummer & E-Mail:</label>
+            <input type="text" placeholder="Telefonnummer oder E-Mail" style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px;">
         </div>
 
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Gerätetyp & Modell (z.B. iPhone 13, Samsung S21):</label>
-            <input type="text" placeholder="Marke und Modell" style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Gerätetyp & Modell (z.B. iPhone 13, Samsung S21):</label>
+            <input type="text" placeholder="Marke und Modell" style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px;">
         </div>
 
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Fehlerbeschreibung / Defekt:</label>
-            <textarea rows="4" placeholder="Was genau ist defekt?" style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; resize: vertical;"></textarea>
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Fehlerbeschreibung / Defekt:</label>
+            <textarea rows="3" placeholder="Was genau ist defekt?" style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; resize: vertical;"></textarea>
         </div>
 
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Mitgeliefertes Zubehör (z.B. Ladekabel, Hülle, OVP):</label>
-            <input type="text" placeholder="Welches Zubehör legen Sie bei?" style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;">
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Mitgeliefertes Zubehör (z.B. Ladekabel, Hülle, OVP):</label>
+            <input type="text" placeholder="Welches Zubehör legen Sie bei?" style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px;">
         </div>
 
         <div style="display: flex; flex-direction: column; text-align: right;">
-            <label style="font-weight: bold; margin-bottom: 5px; color: #333;">Weitere Bemerkungen / Wünsche:</label>
-            <textarea rows="3" placeholder="Geben Sie hier weitere Informationen oder spezielle Wünsche an..." style="padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; resize: vertical;"></textarea>
+            <label style="font-weight: bold; margin-bottom: 3px; color: #333; font-size: 14px;">Weitere Bemerkungen / Wünsche:</label>
+            <textarea rows="2" placeholder="Geben Sie hier weitere Informationen oder spezielle Wünsche an..." style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; resize: vertical;"></textarea>
         </div>
 
-        <button type="button" onclick="window.print();" style="background: #007bff; color: #fff; padding: 14px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 10px;">
+        <button type="button" onclick="window.print();" style="background: #007bff; color: #fff; padding: 12px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 5px;">
             🖨️ Formular ausdrucken
         </button>
     </form>
