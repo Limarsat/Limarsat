@@ -91,14 +91,29 @@ LOGO
     align-items:center;
 }
 
+.logo a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
 .logo img{
     height:70px;
     width:auto;
     display:block;
+    transition:transform .3s ease;
 }
 
 .logo img:hover{
     transform:scale(1.05);
+}
+
+.logo-text{
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-decoration:none;
 }
 
 /* ===========================
@@ -183,6 +198,46 @@ HERO
     color:#f5f5f5;
 }
 
+.trust-badges{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:30px;
+}
+
+.trust-badges span{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.25);
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    padding:8px 18px;
+    border-radius:50px;
+    backdrop-filter:blur(4px);
+}
+
+.trust-badges span i{
+    color:#4ade80;
+    font-size:15px;
+}
+
+.hero-ctas{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+    margin-top:10px;
+}
+
+.hero-ctas .button{
+    width:auto;
+    min-width:200px;
+}
+
 /* ===========================
 BUTTON
 =========================== */
@@ -208,6 +263,20 @@ BUTTON
     background:#0b57d0;
     transform:translateY(-3px);
     box-shadow:0 15px 30px rgba(21,101,255,.35);
+}
+
+.btn-whatsapp{
+    background:#25D366 !important;
+    box-shadow:0 10px 25px rgba(37,211,102,.30) !important;
+    display:inline-flex !important;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.btn-whatsapp:hover{
+    background:#1da851 !important;
+    box-shadow:0 15px 30px rgba(37,211,102,.35) !important;
 }
 
 .call-btn{
@@ -584,7 +653,7 @@ footer{
     background:#0d47a1;
     color:#fff;
     text-align:center;
-    padding:35px 20px;
+    padding:40px 20px;
     margin-top:80px;
     border-top:4px solid #1565ff;
 }
@@ -593,6 +662,14 @@ footer p{
     font-size:17px;
     opacity:.95;
     margin-bottom:10px;
+}
+
+footer .footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px 20px;
+    margin-top:8px;
 }
 
 footer a,
