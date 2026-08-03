@@ -332,6 +332,11 @@ BUTTON
 .card h1{
     font-size:54px;
     margin-bottom:15px;
+    color:#1565ff;
+}
+
+.card h1 i{
+    font-size:54px;
 }
 
 .card h3{
@@ -464,6 +469,15 @@ BUTTON
     font-weight:600;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.3s;
+}
+
+.about-box div i{
+    color:#1565ff;
+    margin-right:6px;
+}
+
+.about-box div:hover i{
+    color:#fff;
 }
 
 .about-box div:hover{
