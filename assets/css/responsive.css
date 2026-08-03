@@ -199,6 +199,16 @@ MOBILE (MAX-WIDTH: 768px)
         border-radius:8px;
     }
 
+    .hero-ctas .button{
+        width:100%;
+        min-width:unset;
+    }
+
+    .trust-badges span{
+        font-size:13px;
+        padding:6px 14px;
+    }
+
     .services,
     .gallery,
     .about,
